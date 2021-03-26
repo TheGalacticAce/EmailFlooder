@@ -1,0 +1,15 @@
+<meta property="og:title" content="poochive" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://foob.tech/" />
+<meta property="og:image" content="https://cdn.discordapp.com/avatars/219541416760705024/d31d7e6fdf37994689584e704d930d46.png" />
+<meta property="og:description" content="the poochive 😋" />
+<meta name="theme-color" content="#FFBAED">
+
+<script>
+  function get(name){
+   if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+      return decodeURIComponent(name[1]);
+  }
+  
+  window.location = 'https://drive.foob.tech/wl/?id=' + get('file');
+</script>
