@@ -21,6 +21,7 @@ const start = async () => {
     );
     rl.question('What email would you like to flood?'.underline + ' ', async enteredEmail => {
         consola.log(`FLOODING!`.bold.yellow + ` ${enteredEmail} was entered`);
+        console.log(`FLOODING!`.bold.yellow + ` ${enteredEmail} was entered`);
         await flood(enteredEmail);
 
         console.info('COMPLETE! '.bold.green + 'Press any button to exit.');
